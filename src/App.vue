@@ -1,15 +1,16 @@
 <template>
-  <div id="app">
+  <div id="app" class="mt-20">
+    <router-view />
     <div id="nav">
-      <router-link to="/">Home</router-link> |
+      <router-link to="/">Home</router-link>|
       <router-link to="/about">About</router-link>
     </div>
-    <router-view/>
   </div>
 </template>
 
 <style>
 #app {
+  text-align: center;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -18,7 +19,13 @@
 }
 
 #nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0;
   padding: 30px;
+  text-align: center;
 }
 
 #nav a {
